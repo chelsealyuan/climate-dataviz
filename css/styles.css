@@ -1,0 +1,209 @@
+body {
+  font-family: "Barlow", sans-serif;
+  margin: 48px;
+}
+
+.bar {
+  fill: rgb(152, 211, 158);
+  fill-opacity: 0.5;
+}
+
+.label {
+  font-size: 14px;
+}
+
+.full-vis-container {
+  margin-top: 75px;
+  display: flex;
+}
+
+.vis-container {
+  padding: 0px;
+}
+
+.left-panel {
+  padding: 0px;
+  width: 60%;
+  margin-right: 48px;
+}
+
+.green {
+  fill: green !important;
+  color: green !important;
+}
+
+h1 {
+  margin-left: 10vw;
+  margin-right: 30px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+h3 {
+  font-size: 28px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 24px;
+}
+
+h4{
+  font-size: 20px;
+  color: rgb(100, 100, 100);
+}
+
+h5 {
+  font-size: 16px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.grid-item {
+  border: 1px solid rgb(0, 0, 0);
+  padding: 2px;
+  font-size: 12px;
+}
+
+.navbar-brand {
+  text-align: right;
+}
+
+.sidebar-header {
+  margin-top: 100px;
+}
+
+#sidebar{
+  height: 600px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  width: 40%;
+}
+
+#accordion{
+  background-color: white;
+}
+
+
+.line{
+  fill: none;
+  stroke: #cc0024;
+}
+
+
+/*TOOLTIP STYLES*/
+
+.overlay {
+  fill: none;
+  pointer-events: all;
+}
+
+.focus circle {
+  fill: steelblue;
+}
+
+.focus text {
+  font-size: 14px;
+}
+
+.tooltip {
+  fill: white;
+  stroke: #000;
+}
+
+.tooltip-date, .tooltip-likes {
+  font-weight: bold;
+}
+
+.country-hover{
+  background-color: white;
+  border:1px solid black;
+  border-radius: 4px;
+  text-align: center;
+  padding: 8px 8px;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-left: 20px;
+  margin-bottom: 3px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+
+/*Segmented Control adapted from: https://github.com/springload/segmented-control*/
+.segmented-control {
+  display: table;
+  width: 250px;
+  margin: 2em 0;
+  padding: 0;
+}
+
+.segmented-control__item {
+  display: table-cell;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.segmented-control__input {
+  position: absolute;
+  visibility: hidden;
+}
+
+.segmented-control__label {
+  display: block;
+  margin: 0 -1px -1px 0; /* -1px margin removes double-thickness borders between items */
+  padding: 8px 4px;
+
+  border: 1px solid #ddd;
+
+
+  font: 14px/1.5 sans-serif; 
+  text-align: center;  
+
+  cursor: pointer;
+}
+
+.segmented-control__label:hover {
+  background: #fafafa;
+}
+
+.segmented-control__input:checked + .segmented-control__label {
+  background: #eee;
+  color: #333; 
+}
+
+.d3-tip s{
+  background-color: #333;
+}
+
+.navbar-brand {
+  margin: 30px;
+}
+
+.myArea{
+  opacity: 100%;
+}
+
+.subtitle{
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+
+div#policy_type_text{
+  position:absolute;
+  left:380px;
+  top:280px;
+}

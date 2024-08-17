@@ -1,0 +1,52 @@
+html {
+  font-family: "Barlow", sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 768px;
+  margin-top: 100px;
+}
+
+h1 {
+  margin-left: 10vw;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+#user-testing-grid{
+  display: grid;
+  grid-template-columns: auto auto;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgb(0, 0, 0);
+  padding: 10px;
+  font-size: 16px;
+}
+
+img {
+  width: 100%;
+}
+
+.sketches img {
+  width: 30%;
+}
+
+.full-width {
+  max-width: 600px;
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+hr{
+  margin: 24px;
+}

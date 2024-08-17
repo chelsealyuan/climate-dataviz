@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Climate Change Vulnerability & Responsibility</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+    <h1>🌍 Climate Change: Contribution & Responsibility</h1>
+
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="navbar-brand active" href="index.html"><b>Home</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar-brand" href="processbook.html">Process Book</a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar-brand" href="https://github.com/csex57/climatechange">Github</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="full-vis-container">
+    <div class="left-panel">
+      <!-- Segmented Control adapted from: https://github.com/springload/segmented-control -->
+      <ul class="segmented-control">
+        <li class="segmented-control__item">
+          <input class="segmented-control__input" onclick="switchVis('map-vis-container')" type="radio" value="1"
+            name="option" id="option-1" checked />
+          <label id="label1" class="segmented-control__label" for="option-1">Map</label>
+        </li>
+        <li class="segmented-control__item">
+          <input class="segmented-control__input" onclick="switchVis('scatter-vis-container')" type="radio" value="2"
+            name="option" id="option-2" />
+          <label id="label2" class="segmented-control__label" for="option-2">Plot</label>
+        </li>
+      </ul>
+      <div class="main-chart">
+        <!--World Map: Default View-->
+        <div id="map-vis-container" class="main-vis">
+          <h3 id="map-vis-title">Contribution to Global CO2 Adjusted by Population (2020)</h3>
+          <h4 class="subtitle">For example, if the US was responsible for 10% of the world's CO2 emissions and had 5% of the world's population, their map value would be 2</h4>
+          <div id="map-vis"></div>
+        </div>
+        <!--Scatter Plot -->
+        <div id="scatter-vis-container" class="main-vis">
+          <h3 id="scatter-vis-title">
+            Contribution to Global CO2 (2020) vs Percent of World Population
+          </h3>
+          <h4 class="subtitle">For example, if the US was responsible for 10% of the world's CO2 emissions and had 5% of the world's population, their map value would be 2</h4>
+          <div id="scatter-vis"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="sidebar-header">
+        <h3>United States</h3>
+      </div>
+      <div id="sidebar-container">
+        <nav id="sidebar">
+          <ul class="list-unstyled components">
+            <!-- collapse -->
+            <div id="accordion">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button id="vis1-button" class="btn" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                      aria-expanded="true" aria-controls="collapseOne"></button>
+                  </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne">
+                  <div class="card-body">
+                    <div class="vis-container">
+                      <h4>CO2 Emissions Per Capita (1990 - 2020)</h4>
+                      <div id="co2-graph"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h5 class="mb-0">
+                    <button id="vis4-button" class="btn collapsed" data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseFour" class="collapse show" aria-labelledby="headingFour" data-bs-parent="#accordion">
+                  <div class="card-body">
+                    <div class="vis-container">
+                      <h4>Policies Established (1954 - 2022)</h4>
+                      <div id="policy_by_year_chart"></div>
+                    </div>
+                    <div class="vis-container">
+                      <h4>Types of Policies in <span class="policy_year"></span> (mouse hover to see the policy type)</h4>
+                      <div id="policy_type_text" style="position:absolute;left:250px;top:700px;text-align:center"></div>
+                      <div id="policy_types_chart"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h5 class="mb-0">
+                    <button id="vis2-button" class="btn collapsed" data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      What are the top 5 most frequent climate policy types?
+                    </button>
+                  </h5>
+                </div>
+
+                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+                  <div class="card-body">
+                   
+                  </div>
+                </div>
+              </div>
+              -->
+
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h5 class="mb-0">
+                    <button id="vis3-button" class="btn collapsed" data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"></button>
+                  </h5>
+                </div>
+
+                <div id="collapseThree" class="collapse show" aria-labelledby="headingThree"
+                  data-bs-parent="#accordion">
+                  <div class="card-body">
+                    <div class="vis-container">
+                      <p>
+                        While the use of renewable energy is hard to observe for many sectors that
+                        cause carbon emissions, one sector using a larger proportion of
+                        alternatives to fossil fuels is electricity. <strong>Nuclear power and renewables </strong> are
+                        common <strong>low-carbon alternatives</strong>.
+                      </p>
+                      <h4>
+                        Electricity production from fossil fuels, nuclear, and
+                        renewables
+                      </h4>
+                      <div id="renewable-graph"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ul>
+        </nav>
+      </div>
+    </div>
+</body>
+
+<!-- Load JS libraries -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/d3.min.js"></script>
+<script src="js/d3-tip/index.js"></script>
+<script src="https://unpkg.com/topojson@3"></script>
+
+<!-- Visualization objects -->
+<script src="js/scatterVis.js"></script>
+<script src="js/mapVis.js"></script>
+<script src="js/decouplingVis.js"></script>
+<script src="js/co2Vis.js"></script>
+<script src="js/policyTypesVis.js"></script>
+<script src="js/policyByYearVis.js"></script>
+<script src="js/renewableVis.js"></script>
+
+<!-- Load data, create visualizations -->
+<script src="js/main.js"></script>
+
+</html>

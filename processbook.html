@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Process Book</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/processbook.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+    <h1>🌍 Climate Change: Contribution & Responsibility</h1>
+
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="navbar-brand" href="index.html">Home</a>
+        </li>
+        <li class="nav-item active">
+          <a class="navbar-brand" href="processbook.html"><b>Process Book</b></a>
+        </li>
+        <li class="nav-item">
+          <a class="navbar-brand" href="https://github.com/csex57/climatechange">Github</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <header>
+    <div class="content">
+      <h2>Process Book</h2>
+      <div>
+        Chelsea Yuan, c.l.yuan@wustl.edu, 490370<br />
+        Christopher Patrick, c.r.patrick@wustl.edu, 488360<br />
+        Ruiwei Xiao, ruiwei@wustl.edu, 500959
+      </div>
+      <div>
+        Repository:
+        <a href="https://github.com/csex57/climatechange">https://github.com/csex57/climatechange</a>
+      </div>
+      <div>
+        Project Video:
+        <a href="https://youtu.be/EwBjVuj-bG8">https://youtu.be/EwBjVuj-bG8</a>
+      </div>
+    </div>
+  </header>
+  <hr />
+  <section>
+    <div class="content">
+      <h2>Background and Motivation</h2>
+      <p>
+        Climate change is a global phenomenon that will affect every single
+        human in every country across the Earth; thus, it is an issue every
+        country must address. However, we suspect that climate change might
+        disproportionately effect countries around the world. We will be
+        evaluating this through CO2 emissions, which has been proven to be a
+        contributing factor to climate change, the ND-Gain Country Index, a
+        score of "vulnerability to climate change and other global challenges"
+        created by University of Notre Dame. To supplement this, we also want
+        to observe which countries have been doing their due dilligence in
+        combating climate change by taking a look at their climate policy
+        efforts and investment in renewable energy. <br />
+
+        Wealthy nations like the United States tend to be major contributors
+        to the causes of climate change, so we want to explore whether it will
+        be impacted by the effects of climate change as much countries that
+        have contributed relatively little. We hope this will bring more
+        attention to the disparities of this global phenomenon and encourage
+        people to think complexly about the role each country can and should
+        play in the effort to combat climate change.
+      </p>
+    </div>
+  </section>
+  <hr />
+  <section>
+    <div class="content">
+      <h2>Related Work</h2>
+      <p>
+        We got inspiration from this large scale study of carbon emissions
+        from each country:
+        <a href="https://ourworldindata.org/co2-emissions">https://ourworldindata.org/co2-emissions</a>
+        This study takes a look at a lot of different aspects of CO2 emissions
+        and how much each region of the world has contributing to it. It
+        presents a lot of useful tools for comparison between different
+        countries and how data has changed over time, so we took some
+        inspiration from the way they presented their information and the way
+        they led the user through the data with question prompts.
+      </p>
+    </div>
+  </section>
+  <hr />
+  <section>
+    <div class="content">
+      <h2>Questions</h2>
+      <h4>New Questions</h4>
+      <ol>
+        <li>
+          <strong>Which countries are emitting disproportionately large amounts of CO2? Is there a pattern of which
+            geographical areas tend to emit a large amount vs a small amount?</strong>
+        </li>
+        <li>
+          <strong>How has CO2 emission per capita changed over time for this country?</strong>
+        </li>
+        <li>
+          <strong>Is the country moving toward renewable and low-CO2 energy alternatives?</strong>
+        </li>
+        <li>
+          <strong>Is this country contributing to the global responsibility of mitigating climate change by creating
+            climate policies? What kinds of policy areas are they focusing on?</strong>
+        </li>
+      </ol>
+
+      <h4>Original Questions</h4>
+      <ol>
+        <li>
+          Which countries have not yet decoupled their GDP and CO2 emissions?
+        </li>
+        <li>
+          What does the GDP and CO2 emissions history look like for each
+          country? How may this impact their ability to decouple emissions
+          from GDP?
+        </li>
+        <li>
+          Are climate policies responsible for the decoupling phenomenon?
+        </li>
+      </ol>
+    </div>
+  </section>
+  <hr />
+  <section>
+    <div class="content">
+      <h2>Data</h2>
+      <div class="grid-container">
+        <div class="grid-item">Dataset</div>
+        <div class="grid-item">Description</div>
+        <div class="grid-item">Link</div>
+        <div class="grid-item">CO2 Emission Data</div>
+        <div class="grid-item">
+          This dataset is a compilation of of key metrics on CO2 emissions
+          (annual, per capita, cumulative and consumption-based), other
+          greenhouse gases, energy mix, etc.
+        </div>
+        <div class="grid-item">
+          <a href="https://github.com/owid/co2-data">https://github.com/owid/co2-data</a>
+        </div>
+        <div class="grid-item">Share of Annual Global CO2 Emissions</div>
+        <div class="grid-item">
+          This dataset was adapted from Our World in Data's complete global
+          CO2 dataset.
+        </div>
+        <div class="grid-item">
+          <a href="https://ourworldindata.org/co2-dataset-sources">https://ourworldindata.org/co2-dataset-sources</a>
+        </div>
+        <div class="grid-item">Country Population Data</div>
+        <div class="grid-item">
+          This contains the amount of people in each country.
+        </div>
+        <div class="grid-item">
+          <a
+            href="https://data.worldbank.org/indicator/SP.POP.TOTL">https://data.worldbank.org/indicator/SP.POP.TOTL</a>
+        </div>
+        <div class="grid-item">Climate Policy Database</div>
+        <div class="grid-item">
+          The dataset contains 5783 climate policies from 198 countries.
+        </div>
+        <div class="grid-item">
+          <a href="https://climatepolicydatabase.org/">https://climatepolicydatabase.org/</a>
+        </div>
+        <div class="grid-item">Country Geography Data</div>
+        <div class="grid-item">
+          The dataset contains the geographic data for the countries of the
+          world.
+        </div>
+        <div class="grid-item">
+          <a href="https://geojson-maps.ash.ms/">https://geojson-maps.ash.ms/</a>
+        </div>
+
+        <div class="grid-item">Sources of Electricity Production</div>
+        <div class="grid-item">
+          The dataset contains the history of percentages of a country's
+          electricity generation from fossil fuels, nuclear, and renewable
+          sources.
+        </div>
+        <div class="grid-item">
+          <a href=" https://ourworldindata.org/grapher/elec-fossil-nuclear-renewables">
+            https://ourworldindata.org/grapher/elec-fossil-nuclear-renewables</a>
+        </div>
+      </div>
+      <p>
+        There was quite a bit of data cleaning, that mostly involved
+        restructing the datasets so they could be read into D3 as a csv,
+        handling a few missing values, and changing columns to the right
+        datatypes.
+      </p>
+    </div>
+  </section>
+  <hr />
+  <section>
+    <div class="content">
+      <h2>Exploratory Data Analysis</h2>
+      <ol>
+        <li>
+          Map/Globe Visualization
+          <p>
+            Because our data involves all countries around the world, we knew
+            we wanted to include a map or globe of some sort as an entry point
+            and navigation tool for the user to select a country they may be
+            interested in.
+          </p>
+        </li>
+
+        <li>
+          Trend Over Time Visualization
+          <p>
+            Because our CO2 data changes over time, we initially decided on a
+            line chart, as this would be the easiest way to show information
+            that changes over time.
+          </p>
+        </li>
+
+        <li>
+          Frequency Visualization
+          <p>
+            We wanted to display our policy data as a histogram/bar chart,
+            showing the number of climate policies that were created each
+            year.
+          </p>
+        </li>
+      </ol>
+    </div>
+  </section>
+  <hr />
+  <section>
+    <div class="content">
+      <h2>Milestone 1</h2>
+      <div>
+        <h3>Design Evolution</h3>
+        <p>
+          These initial sketches explore some different iterations of ways to
+          present our data. We decided on a final design with a map andline
+          graph of all countries decoupling data as an entry point, and then a
+          detailed view of CO2 and GDP trends over time along with the number
+          of climate policies that were created each year. The user can then
+          scrub over the timeline to see the specific breakdown of policies
+          created within that time period.
+        </p>
+        <div class="sketches">
+          <img src="assets/revisited_design2.jpg" />
+          <img src="assets/revisited_design3.jpg" />
+          <img src="assets/final_design.jpg" />
+        </div>
+        <p>
+          This mock-up addresses a change in layout so the user can see
+          changes in the graphs more easily (rather than having to scroll up
+          and down when they want to change the data). The open panel on the
+          right will display the specific data, while the left with act as the
+          "control panel," where users can select a country on the map and see
+          where it stands in its decoupling compared to other countries.
+        </p>
+        <img class="full-width" src="assets/compact_design1.jpg" />
+      </div>
+    </div>
+
+    <div>
+      <h3>Implementation</h3>
+      <ul>
+        <li>Clean and processed each dataset</li>
+        <li>Implementation of the static components of each of our graphs</li>
+        <li>
+          Are climate policies responsible for the decoupling phenomenon?
+        </li>
+      </ul>
+
+      <img class="full-width" src="assets/milestone.png" />
+    </div>
+
+    <div>
+      <h2>Evaluation</h2>
+      <p>
+        However, it is following this implementation that we decided to pivot
+        the aim of our project because we wanted to answer new questions and
+        found our original goal hard to implement in a clear and
+        understandable way for users. In our Milestone 1 prototype, we were
+        addressing these questions:
+      </p>
+      <ul>
+        <li>
+          Which countries have not yet decoupled their GDP and CO2 emissions?
+        </li>
+        <li>
+          What does the GDP and CO2 emissions history look like for each
+          country? How may this impact their ability to decouple emissions
+          from GDP?
+        </li>
+        <li>
+          Are climate policies responsible for the decoupling phenomenon?
+        </li>
+      </ul>
+
+      <p>
+        During our exploration, we decided we wanted to explore more
+        specifically as to how certain countries would be affected by climate
+        change, as we noticed more wealthy and developed nations were able to
+        decouple, while developing nations were much less capable of
+        decoupling, and this made us consider how there might be disparities
+        in how climate change affects different nations around the world. We
+        adjusted our questions to target the questions:
+      </p>
+
+      <ul>
+        <li>
+          Are countries around the world disproportionately affected by
+          climate change? Are countries that contribute less to global CO2
+          more vulnerable to climate change?
+        </li>
+        <li>
+          Which countries are the most and least vulnerable to climate change?
+        </li>
+        <li>
+          What kinds of policies are countries implmenting to mitigate climate
+          change, and are they effective in reducing CO2 emissions?
+        </li>
+      </ul>
+    </div>
+  </section>
+  <hr />
+  <section>
+    <div class="content">
+      <h2>Milestone 2</h2>
+      <div>
+        <h3>Design Evolution</h3>
+        <p>
+          After getting some feedback on our designs, we realized it might be
+          hard to understand our main graphs and the data it was trying to
+          express. Our country-specific graph was also not showing correlation
+          between our information very well, so with our new questions, we
+          decided to redo our visualizations to tell a story more coherent.
+        </p>
+      </div>
+    </div>
+
+    <div>
+      <h3>Changing our main visualization</h3>
+      <p>
+        The goal of our main visualizations - as it was from the beginning -
+        is to show that there are some countries that should be taking more
+        responsibility than they are now. At first, we tried comparing ND-gain
+        (a vulnerability index) data to co2 emissions, but this was difficult
+        to understand. We instead decided to show responsibility by comparing
+        co2 emissions as a percentage of total emissions and world population
+        percentages. This is shown below by darker countries having a greater
+        co2% to population% ratio. Furthermore, we have a scatter plot that
+        allows that user to more easily target countries by ratio value.
+      </p>
+      <img class="full-width" src="assets/co2_pop_map.png" />
+      <img class="full-width" src="assets/co2_pop_scatter.png" />
+    </div>
+
+    <div>
+      <h3>Changing our explanatory visualizations</h3>
+      <p>
+        One thing that changed from our previous iteration is the inclusion of
+        renewable energy data over time. Our goal is to point out countries
+        that need to take more responsibility, and answering the question "is
+        this country heading in the correct direction" helps complete the
+        narrative.
+      </p>
+      <img class="full-width" src="assets/renewables.png" />
+
+      <p>
+        Additionally, we believe that simply giving presenting the co2 data
+        over time allows the user more perspective than they would have if
+        they were only to see the map which is only a snapshot in time. We are
+        no longer pursing the decoupling concept from milestone 1, so we are
+        presenting the co2 data in a chart by itself. Similar to the renewable
+        energy visualization, we want to allow our viewer to see if the
+        country is heading in a positive or negative direction.
+      </p>
+      <img class="full-width" src="assets/co2_graph.png" />
+
+      <p>
+        Finally, we decided to continue on our path of visualizing policy
+        creation over time. Policy is not the only factor that contributes to
+        emission changes, but it plays a big role. We give the viewer the
+        chance to see if a country is consistently creating policies so that
+        the user can speculate whether the country is putting in sufficient
+        effort to benefit their situation. Below, you can also see a chart
+        with the breakdown of policy types. This is so that users can be aware
+        of the specific actions actions a country is taking.
+      </p>
+      <img class="full-width" src="assets/policy_year.jpg" />
+      <img class="full-width" src="assets/policy_type.jpg" />
+    </div>
+
+    <div>
+      <h3>Reflection</h3>
+      <p>
+        We are happy that our message has become more refined and
+        comprehensible since milestone 1. We look forward to to in-person
+        evaluations to see which of the visualizations users pay attention to
+        the most. With this, we hope to further narrow down our message to
+        explore a narrative that our classmates are most interested in.
+      </p>
+    </div>
+  </section>
+  <hr />
+  <section>
+    <div class="content">
+      <h2>User Testing</h2>
+      <div id="user-testing-grid">
+        <div class="grid-item">Observations</div>
+        <div class="grid-item">Modifications</div>
+
+        <div class="grid-item">When user was asked to find how many policies regarding renewables a country had, they
+          could not identify that they had to navigate to the donut chart visualization. They continued to observe the
+          policies over time bar chart and count the number of policies.</div>
+        <div class="grid-item">Combined the bar chart and donut chart so that brushing over the bar chart changes the
+          donut chart accordingly. These two piece of data are related, so shouldn't be separated for better access to
+          the user.</div>
+
+        <div class="grid-item">User had a hard time understanding meaning of different graphs, and didn't find the
+          leading questions in the headers very helpful.</div>
+        <div class="grid-item">We changed the wording of the headers to be more general and refined the titles of the
+          graph, so they were more simple and digestible to an average audience.</div>
+
+        <div class="grid-item">User did not know they could click on a country and had a hard time finding the country
+          they had last clicked on.</div>
+        <div class="grid-item">We implemented a stroke outline that highlights the country when clicked. This should
+          help the user retain the memory of its geographical placement slightlt better. The highlight is also reflected
+          between the map and plot, so the user can see where the country sits both in the geography and the data.</div>
+
+        <div class="grid-item">User had a hard time navigating between the three different graph visualizations and map.
+        </div>
+        <div class="grid-item">We allowed for all visualizations to be opened instead of one at a time and set them all
+          as open by default. We also styled the layout so that the map would stay static for navigation, while the user
+          could scroll through the different
+          graphs.</div>
+      </div>
+    </div>
+  </section>
+  <hr />
+  <section>
+    <div class="content">
+      <h2>Final Visualization</h2>
+      <h4>Objectives</h4>
+      <ul>
+        <li>User can observe map of countries to look for any geographical patterns of disproportionate CO2
+          contribution. User can also observe this country on a plot to see where it is in the global distribution.
+        </li>
+        <li>User can observe the trend of CO2 per capita. This might inform them of if a
+          country trending towards using less CO2 or more.</li>
+        <li>User can observe the trend of climate-related policies, and the types of policies the country is creating.
+          This might inform them of if a country is putting in their due diligence to mitigate climate change.</li>
+        <li>User can observe the trend of use of reneable and low-carbon sources for energy production (electricity is
+          used as a metric due to data limitations). This might inform them of if a
+          country is investing more into low-carbon alternatives, rather than relying on fossil fuels. </li>
+      </ul>
+    </div>
+  </section>
+  <hr />
+  <section>
+    <div class="content">
+      <h2>Citations & References</h2>
+      <h4>Tooltips:</h4>
+      <p>
+        Bostock, M. (2021, October 20). Line chart, Tooltip. Observable.
+        Retrieved November 30, 2022, from
+        https://observablehq.com/@d3/line-with-tooltip
+      </p>
+      <h4>Animations:</h4>
+      <p>
+        Moxy, L. (2018, October 3). Create a D3 line chart animation. Medium.
+        Retrieved November 30, 2022, from
+        https://medium.com/@louisemoxy/create-a-d3-line-chart-animation-336f1cb7dd61
+      </p>
+      <h4>Normalized Stacked Area Chart:</h4>
+      <p>https://observablehq.com/@d3/normalized-stacked-area-chart</p>
+      <h4>Map Functionality and design:</h4>
+      <p>
+        Dragging: Retrieved November 21, 2022, from
+        https://observablehq.com/@michael-keith/draggable-globe-in-d3
+      </p>
+      <p>
+        Gradient legend: Retrieved November 28, 2022, from
+        https://stackoverflow.com/questions/39023154/how-to-make-a-color-gradient-bar-using-d3js
+      </p>
+    </div>
+  </section>
+</body>
+<!-- Load JS libraries -->
+<script src="js/bootstrap.min.js"></script>
+
+</html>
